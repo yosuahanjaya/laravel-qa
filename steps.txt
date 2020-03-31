@@ -1,0 +1,14 @@
+composer create-project --prefer-dist laravel/laravel laravel_qa
+cd laravel_qa
+composer install 
+php artisan migrate:refresh
+composer require laravel/ui --dev
+php artisan ui bootstrap
+php artisan ui vue --auth
+npm install
+npm run dev
+configure database and .gitignore
+git init
+git add .
+git commit -m ""
+repo in github
